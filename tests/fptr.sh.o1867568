@@ -1,0 +1,53 @@
+### Starting TaskPrologue of job 1867568 on a0122 at Sun Jul 14 06:31:12 CEST 2024
+Running on cores 0-15 with governor ondemand
+Sun Jul 14 06:31:12 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 555.42.06              Driver Version: 555.42.06      CUDA Version: 12.5     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     On  |   00000000:01:00.0 Off |                  Off |
+|  0%   38C    P0             61W /  300W |       1MiB /  49140MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+### Finished TaskPrologue
+
+4.000 -1.000 0.000 0.000 0.000 
+-1.000 4.000 -1.000 0.000 0.000 
+0.000 -1.000 4.000 -1.000 0.000 
+0.000 0.000 -1.000 4.000 -1.000 
+0.000 0.000 0.000 -1.000 3.000 
+Time taken in ms: 12.12
+0.42 0.67 0.28 0.44 0.48 
+=== JOB_STATISTICS ===
+=== current date     : Sun Jul 14 06:31:13 CEST 2024
+= Job-ID             : 1867568 on alex
+= Job-Name           : fptr.sh
+= Job-Command        : /home/hpc/hesp/hesp121h/hesp/project/tests/fptr.sh
+= Initial workdir    : /home/hpc/hesp/hesp121h/hesp/project/tests
+= Queue/Partition    : a40
+= Slurm account      : hesp with QOS=normal
+= Requested resources:  for 00:04:00
+= Elapsed runtime    : 00:00:03
+= Total RAM usage    : 0.0 GiB of assigned  GiB (%)
+= Node list          : a0122
+= Subm/Elig/Start/End: 2024-07-14T06:31:09 / 2024-07-14T06:31:09 / 2024-07-14T06:31:10 / 2024-07-14T06:31:13
+======================
+=== Quota infos ======
+    Path              Used     SoftQ    HardQ    Gracetime  Filec    FileQ    FiHaQ    FileGrace    
+    /home/woody         44.2G  1000.0G  1500.0G        N/A     147K   5,000K   7,500K        N/A    
+    /home/hpc           96.6G   104.9G   209.7G        N/A  44,983      500K   1,000K        N/A    
+======================
+=== GPU utilization ==
+gpu_name, gpu_bus_id, pid, gpu_utilization [%], mem_utilization [%], max_memory_usage [MiB], time [ms]
+NVIDIA A40, 00000000:01:00.0, 3006764, 0 %, 0 %, 262 MiB, 396 ms
